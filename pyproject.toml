@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["moex*"]
+namespaces = true
+
+[project]
+name = "moexalgo"
+description = "A useful wrapper for MOEX/ISS API"
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = ["version"]
+dependencies = [
+]
+
+[project.optional-dependencies]
+pandas = [
+    "pandas"
+]
